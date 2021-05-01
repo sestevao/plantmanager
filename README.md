@@ -1,3 +1,6 @@
+<div style="align-items:center">
+  <img src="https://github.com/sestevao/plantmanager/blob/main/.github/icon.png?raw=true" alt="icon" />
+</div>
 
 ## 👀 About 
 
@@ -43,7 +46,8 @@ Application built on the React Natvie track from Next Level Week #05 from @rocke
 $ git clone https://github.com/sestevao/plantmanager.git
 $ cd plantmanager
 
-# now predicting that you already have node.js with npm or yarn on your computer, install the global expo cli with the command
+# now predicting that you already have node.js with npm or yarn on your
+# computer, install the global expo cli with the command
 $ npm install --global expo-cli
 # or
 $ yarn add expo-cli
