@@ -1,5 +1,5 @@
 <div style="align-items:center">
-  <img src="https://github.com/sestevao/plantmanager/blob/main/.github/icon.png?raw=true" alt="icon" />
+  <img src="https://github.com/sestevao/plantmanager/blob/main/.github/icon.png?raw=true" alt="icon" width="100" />
 </div>
 
 ## 👀 About 
