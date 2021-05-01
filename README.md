@@ -1,7 +1,7 @@
 
 ## 👀 About 
 
-PlantManager is an application developed in order to help people who have plants at home to remember to water them.
+🌱PlantManager🌱 is an application developed in order to help people who have plants at home to remember to water them.
 
 Application built on the React Natvie track from Next Level Week #05 from @rocketseat during April 19-25, 2021.
 
@@ -27,7 +27,7 @@ Application built on the React Natvie track from Next Level Week #05 from @rocke
 
 ## Features
 
-- [x] Authenticate with the name.
+- [ ] Authenticate with the name.
 - [ ] Select plant to be reminded to water.
 - [ ] Choose a time to be reminded to water the plant.
 - [ ] Receive a notification reminding you to water the plant at the time you choose.
@@ -62,6 +62,8 @@ yarn start
 # Well done, PlantManager is started!
 ```
 
+<br>
+
 ## 📝 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
