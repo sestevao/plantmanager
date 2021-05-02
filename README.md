@@ -17,7 +17,9 @@ Application built on the React Natvie track from Next Level Week #05 from @rocke
 - [Node.js](https://nodejs.org/en/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Expo](https://expo.io/)
-
+- [@expo/vector-icon](https://docs.expo.io/guides/icons/)
+- [expo google fonts]
+- [react navigation]
 <br>
 
 ## Requirements
@@ -58,9 +60,7 @@ npm json-server ./src/services/server.json --host localhost --port 3333 --delay 
 yarn json-server ./src/services/server.json --host localhost --port 3333 --delay 700
 
 # Finally run the project in a development environment
-npm start
-# or
-yarn start
+expo start
 
 # and just open it on your emulator or device using Expo
 # Well done, PlantManager is started!
