@@ -8,8 +8,7 @@ import { isBefore, format } from 'date-fns'
 import DateTimePicker, { Event } from '@react-native-community/datetimepicker'
 
 import { Button } from '../components/Button'
-
-import { loadPlant, PlantProps, savePlant } from '../libs/storage'
+import { PlantProps, savePlant } from '../libs/storage'
 
 import waterdrop from '../assets/waterdrop.png'
 import colors from '../styles/colors'
@@ -67,7 +66,10 @@ export function PlantSave() {
   }
 
   return (
-    <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.container}>
+    <ScrollView
+      showsVerticalScrollIndicator={false}
+      contentContainerStyle={styles.container}
+    >
       <View style={styles.container}>
         <View style={styles.plantInfo}>
           <SvgFromUri uri={plant.photo} width={200} height={200} />
@@ -90,7 +92,9 @@ export function PlantSave() {
             </Text>
           </View>
 
-          <Text style={styles.alertLabel}>Escolha o melhor horário para ser lembrado: </Text>
+          <Text style={styles.alertLabel}>
+            Escolha o melhor horário para ser lembrado:
+          </Text>
 
           {showDatePicker && (
             <DateTimePicker

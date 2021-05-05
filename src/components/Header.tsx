@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import { StyleSheet, View, Text, Image } from 'react-native';
+import React, { useEffect, useState } from 'react'
+import { StyleSheet, View, Text, Image } from 'react-native'
 import { getStatusBarHeight } from 'react-native-iphone-x-helper'
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage'
 
 import userImg from '../assets/cute_avatar.png'
 
@@ -23,8 +23,12 @@ export function Header() {
   return (
     <View style={styles.container}>
       <View>
-        <Text style={styles.greeting}>Olá,</Text>
-        <Text style={styles.username}>{username}</Text>
+        <Text style={styles.greeting}>
+          Olá,
+        </Text>
+        <Text style={styles.username}>
+          {username}
+        </Text>
       </View>
 
       <Image source={userImg} style={styles.userImage} />

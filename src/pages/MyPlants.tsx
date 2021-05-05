@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import { useNavigation } from '@react-navigation/core'
-import { StyleSheet, Image, View, Text } from 'react-native'
+import { StyleSheet, Image, View, Text, Alert } from 'react-native'
 import { FlatList } from 'react-native-gesture-handler'
 import { formatDistance } from 'date-fns/esm'
 import { pt } from 'date-fns/locale'
 
-import { loadPlant, PlantProps } from '../libs/storage'
+import { loadPlant, PlantProps, removePlant } from '../libs/storage'
 import { Header } from '../components/Header'
 import { Load } from '../components/Load'
 import { PlantCardSecondary } from '../components/PlantCardSecondary'
@@ -15,11 +14,33 @@ import colors from '../styles/colors'
 import fonts from '../styles/fonts'
 
 export function MyPlants() {
-  const [myPlants, setMyPlants] = useState<PlantProps[]>()
+  const [myPlants, setMyPlants] = useState<PlantProps[]>([])
   const [loading, setLoading] = useState(true)
   const [nextWatered, setNextWatered] = useState<string>()
 
-  const navigation = useNavigation()
+  function handleRemove(plant: PlantProps) {
+    Alert.alert('Remover', `Deseja remover a ${plant.name}?`, [
+      {
+        text: 'Não 🙏',
+        style: 'cancel'
+      },
+      {
+        text: 'Sim 😢',
+        onPress: async () => {
+          try {
+            await removePlant(plant.id);
+
+            setMyPlants((oldData) =>
+              oldData.filter((item) => item.id !== plant.id)
+            )
+
+          } catch (error) {
+            Alert.alert('Não foi possível remover! 😢')
+          }
+        }
+      }
+    ])
+  }
 
   useEffect(() => {
     async function loadStorageData() {
@@ -39,6 +60,7 @@ export function MyPlants() {
     loadStorageData()
   }, [])
 
+
   if (loading)
     return <Load />
 
@@ -49,17 +71,25 @@ export function MyPlants() {
 
       <View style={styles.spotlight}>
         <Image source={waterdrop} style={styles.spotlightImage} />
-        <Text style={styles.spotlightText}>{nextWatered}</Text>
+
+        <Text style={styles.spotlightText}>
+          {nextWatered}
+        </Text>
       </View>
 
       <View style={styles.plants}>
-        <Text style={styles.plantsTitle}>Próximas regadas</Text>
+        <Text style={styles.plantsTitle}>
+          Próximas regadas
+        </Text>
 
         <FlatList
           data={myPlants}
           keyExtractor={(item) => String(item.id)}
           renderItem={({ item }) => (
-            <PlantCardSecondary data={item} />
+            <PlantCardSecondary
+              data={item}
+              handleRemove={() => handleRemove(item)}
+            />
           )}
           showsVerticalScrollIndicator={false}
           contentContainerStyle={{ flex: 1 }}

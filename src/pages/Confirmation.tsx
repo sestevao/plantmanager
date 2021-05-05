@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import { useNavigation, useRoute } from '@react-navigation/core';
-import { StyleSheet, SafeAreaView, View, Text } from 'react-native';
+import React from 'react'
+import { useNavigation, useRoute } from '@react-navigation/core'
+import { StyleSheet, SafeAreaView, View, Text } from 'react-native'
 
-import { Button } from '../components/Button';
+import { Button } from '../components/Button'
 
-import colors from '../styles/colors';
-import fonts from '../styles/fonts';
+import colors from '../styles/colors'
+import fonts from '../styles/fonts'
 
 interface Params {
   title: string
