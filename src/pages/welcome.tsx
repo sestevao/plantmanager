@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  StyleSheet,
-  Text,
-  View,
-  Image,
-  TouchableOpacity,
-  Dimensions,
-  SafeAreaView,
-} from 'react-native';
+import { StyleSheet, SafeAreaView, Text, View, Image, TouchableOpacity, Dimensions } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/core';
 
@@ -38,7 +30,7 @@ export function Welcome() {
         />
 
         <Text style={styles.subtitle}>
-          Não esqueça mais de regar as suas plantas.{'\n'}
+          Não esqueça mais de regar as suas plantas.
           Nós cuidamos de lembrar sempre que precisar.
         </Text>
 
@@ -53,6 +45,8 @@ export function Welcome() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    alignItems: 'center',
+    justifyContent: 'space-around',
   },
   wrapper: {
     flex: 1,
@@ -61,18 +55,18 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   title: {
-    fontSize: 32,
+    fontSize: 28,
     fontWeight: 'bold',
     fontFamily: fonts.heading,
     textAlign: 'center',
     color: colors.heading,
-    marginTop: 30,
-    lineHeight: 38,
+    marginTop: 38,
+    lineHeight: 34,
   },
   subtitle: {
     textAlign: 'center',
     paddingHorizontal: 20,
-    fontSize: 16,
+    fontSize: 18,
     fontFamily: fonts.text,
     color: colors.heading,
   },
@@ -85,7 +79,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 16,
     marginBottom: 10,
-    paddingHorizontal: 10,
     height: 56,
     width: 56,
   },
