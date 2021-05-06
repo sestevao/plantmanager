@@ -8,6 +8,10 @@
 
 Application built on the React Natvie track from Next Level Week #05 from @rocketseat during April 19-25, 2021.
 
+<div align="center">
+  <img src="https://github.com/sestevao/plantmanager/blob/main/.github/Animation.gif?raw=true">
+</div>
+
 <br>
 
 ## 🚀 Technologies
