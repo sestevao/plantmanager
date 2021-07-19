@@ -43,25 +43,23 @@ export function UserIdentification() {
 
   async function handleSubmit() {
     if (!name) {
-      return Alert.alert('Como posso lhe chamar? 😢')
+      return Alert.alert('How can I call you? 😢')
     }
 
     try {
       await AsyncStorage.setItem('@plantmanager:user', name)
 
       navigation.navigate('Confirmation', {
-        title: 'Prontinho',
-        subtitle: 'Agora vamos começar a cuidar das suas plantinhas com muito cuidado.',
-        buttonTitle: 'Começar',
+        title: 'Ready',
+        subtitle: 'Now let\'s start taking care of your little plants very carefully.',
+        buttonTitle: 'Start',
         icon: 'smile',
         nextScreen: 'PlantSelect',
       })
 
     } catch {
-      Alert.alert('Não foi possivel salvar o seu nome! 😢')
+      Alert.alert('Unable to save your name! 😢')
     }
-
-
   }
 
   return (
@@ -79,8 +77,8 @@ export function UserIdentification() {
                 </Text>
 
                 <Text style={styles.title}>
-                  Como podemos {`\n`} lhe chamar?
-              </Text>
+                  How can we {`\n`} call it?
+                </Text>
               </View>
 
               <TextInput

@@ -18,9 +18,9 @@ export function Welcome() {
     <SafeAreaView style={styles.container}>
       <View style={styles.wrapper}>
         <Text style={styles.title}>
-          Gerencie {'\n'}
-          suas plantas {'\n'}
-          de forma fácil
+          Manage {'\n'}
+          your plants {'\n'}
+          easily
         </Text>
 
         <Image
@@ -30,8 +30,8 @@ export function Welcome() {
         />
 
         <Text style={styles.subtitle}>
-          Não esqueça mais de regar as suas plantas.
-          Nós cuidamos de lembrar sempre que precisar.
+          Don't forget to water your plants anymore.
+          We take care of remembering whenever you need it.
         </Text>
 
         <TouchableOpacity activeOpacity={0.7} style={styles.button} onPress={handleStart}>

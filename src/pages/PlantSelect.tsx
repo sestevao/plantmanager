@@ -79,7 +79,7 @@ export function PlantSelect() {
       setEnvironments([
         {
           key: 'all',
-          title: 'Todos',
+          title: 'All',
         },
         ...data
       ])
@@ -102,8 +102,8 @@ export function PlantSelect() {
       <View style={styles.header}>
         <Header />
 
-        <Text style={styles.title}>Em qual ambiente</Text>
-        <Text style={styles.subtitle}>quer colocar a sua planta?</Text>
+        <Text style={styles.title}>In which environment</Text>
+        <Text style={styles.subtitle}>do you want to put your plant?</Text>
       </View>
 
       <View>

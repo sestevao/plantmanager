@@ -33,12 +33,12 @@ export function PlantSave() {
 
     if (dateTime && isBefore(dateTime, new Date())) {
       setSeletedDateTime(new Date())
-      return Alert.alert("Escolha uma hora no futuro! ⏰")
+      return Alert.alert("Choose a time in the future! ⏰")
     }
 
     if (dateTime) {
       setSeletedDateTime(dateTime)
-    }
+      }
   }
 
   function handleOpenDateTimePickerForAndroid() {
@@ -53,15 +53,15 @@ export function PlantSave() {
       })
 
       navigation.navigate('Confirmation', {
-        title: 'Tudo certo',
-        subtitle: 'Fique tranquilo que sempre vamos lhe lembrar de cuidar da sua plantinha com bastante amor.',
-        buttonTitle: 'Muito obrigado :D',
+        title: 'All very well',
+        subtitle: 'Rest assured that we will always remind you to take care of your little plant with a lot of love.',
+        buttonTitle: 'Thank you very much :D',
         icon: 'hug',
         nextScreen: 'MyPlants',
       })
 
     } catch {
-      Alert.alert("Não foi possivel guardar! 😢")
+      Alert.alert("Unable to save! 😢")
     }
   }
 
@@ -93,7 +93,7 @@ export function PlantSave() {
           </View>
 
           <Text style={styles.alertLabel}>
-            Escolha o melhor horário para ser lembrado:
+            Choose the best time to be remembered:
           </Text>
 
           {showDatePicker && (
@@ -111,12 +111,12 @@ export function PlantSave() {
               onPress={handleOpenDateTimePickerForAndroid}
             >
               <Text style={styles.dateTimePickerText}>
-                {`Mudar ${format(selectedDateTime, "HH:mm")}`}
+                {`Change ${format(selectedDateTime, "HH:mm")}`}
               </Text>
             </TouchableOpacity>
           )}
 
-          <Button title="Registar Planta" onPress={handleSave} />
+          <Button title="Register Plant" onPress={handleSave} />
         </View>
       </View>
     </ScrollView>

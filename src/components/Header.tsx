@@ -24,7 +24,7 @@ export function Header() {
     <View style={styles.container}>
       <View>
         <Text style={styles.greeting}>
-          Olá,
+          Hello,
         </Text>
         <Text style={styles.username}>
           {username}
