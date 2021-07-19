@@ -36,12 +36,12 @@ Application built on the React Natvie track from Next Level Week #05 from @rocke
 
 ## Features
 
-- [ ] Authenticate with the name.
-- [ ] Select plant to be reminded to water.
-- [ ] Choose a time to be reminded to water the plant.
-- [ ] Receive a notification reminding you to water the plant at the time you choose.
-- [ ] Remove plants.
-- [ ] All data is saved to the device's Local Storage.
+- [x] Authenticate with the name.
+- [x] Select plant to be reminded to water.
+- [x] Choose a time to be reminded to water the plant.
+- [x] Receive a notification reminding you to water the plant at the time you choose.
+- [x] Remove plants.
+- [x] All data is saved to the device's Local Storage.
 
 <br>
 
