@@ -2,11 +2,11 @@
   <img src="https://github.com/sestevao/plantmanager/blob/main/.github/icon.png?raw=true" alt="icon" width="150" />
 </div>
 
-## 👀 About 
+## 👀 About
 
 🌱PlantManager🌱 is an application developed in order to help people who have plants at home to remember to water them.
 
-Application built on the React Natvie track from Next Level Week #05 from @rocketseat during April 19-25, 2021.
+Application built on the React Native track from Next Level Week #05 from @rocketseat during April 19-25, 2021.
 
 <div align="center">
   <img src="https://github.com/sestevao/plantmanager/blob/main/.github/Animation.gif?raw=true">
@@ -24,7 +24,7 @@ Application built on the React Natvie track from Next Level Week #05 from @rocke
 - [@expo/vector-icon](https://docs.expo.io/guides/icons/)
 - [expo google fonts]
 - [react navigation]
-<br>
+  <br>
 
 ## Requirements
 
@@ -59,15 +59,14 @@ $ npm install --global expo-cli
 $ yarn add expo-cli
 
 # after that, just run the following commands on separate terminals to run the fake server
-npm json-server ./src/services/server.json --host localhost --port 3333 --delay 700
-# or
-yarn json-server ./src/services/server.json --host localhost --port 3333 --delay 700
+json-server ./src/services/server.json --host myIp --port 3333 --delay 700
 
 # Finally run the project in a development environment
 expo start
 
 # and just open it on your emulator or device using Expo
 # Well done, PlantManager is started!
+
 ```
 
 <br>

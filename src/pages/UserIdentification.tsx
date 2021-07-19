@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   StyleSheet,
   SafeAreaView,
@@ -9,23 +9,22 @@ import {
   Platform,
   Keyboard,
   Alert,
-} from 'react-native';
-import { useNavigation } from '@react-navigation/core';
-import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+} from "react-native";
+import { useNavigation } from "@react-navigation/core";
+import { TouchableWithoutFeedback } from "react-native-gesture-handler";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
-import { Button } from '../components/Button';
+import { Button } from "../components/Button";
 
-import colors from '../styles/colors';
-import fonts from '../styles/fonts';
-
+import colors from "../styles/colors";
+import fonts from "../styles/fonts";
 
 export function UserIdentification() {
   const [isFocused, setIsFocused] = useState(false);
   const [isFilled, setIsFilled] = useState(false);
   const [name, setName] = useState<string>();
 
-  const navigation = useNavigation()
+  const navigation = useNavigation();
 
   function handleInputBlur() {
     setIsFocused(false);
@@ -43,22 +42,22 @@ export function UserIdentification() {
 
   async function handleSubmit() {
     if (!name) {
-      return Alert.alert('How can I call you? 😢')
+      return Alert.alert("How can I call you? 😢");
     }
 
     try {
-      await AsyncStorage.setItem('@plantmanager:user', name)
+      await AsyncStorage.setItem("@plantmanager:user", name);
 
-      navigation.navigate('Confirmation', {
-        title: 'Ready',
-        subtitle: 'Now let\'s start taking care of your little plants very carefully.',
-        buttonTitle: 'Start',
-        icon: 'smile',
-        nextScreen: 'PlantSelect',
-      })
-
+      navigation.navigate("Confirmation", {
+        title: "Ready",
+        subtitle:
+          "Now let's start taking care of your little plants very carefully.",
+        buttonTitle: "Start",
+        icon: "smile",
+        nextScreen: "PlantSelect",
+      });
     } catch {
-      Alert.alert('Unable to save your name! 😢')
+      Alert.alert("Unable to save your name! 😢");
     }
   }
 
@@ -66,63 +65,59 @@ export function UserIdentification() {
     <SafeAreaView style={styles.container}>
       <KeyboardAvoidingView
         style={styles.container}
-        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+        behavior={Platform.OS === "ios" ? "padding" : "height"}
       >
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
           <View style={styles.content}>
             <View style={styles.form}>
               <View style={styles.header}>
-                <Text style={styles.emoji}>
-                  {isFilled ? '😄' : '😃'}
-                </Text>
+                <Text style={styles.emoji}>{isFilled ? "😄" : "😃"}</Text>
 
-                <Text style={styles.title}>
-                  How can we {`\n`} call it?
-                </Text>
+                <Text style={styles.title}>How can we {`\n`} call it?</Text>
               </View>
 
               <TextInput
                 style={[
                   styles.input,
-                  (isFocused || isFilled) && { borderColor: colors.green }
+                  (isFocused || isFilled) && { borderColor: colors.green },
                 ]}
-                placeholder="Digite um nome"
+                placeholder="Enter your name"
                 onBlur={handleInputBlur}
                 onFocus={handleInputFocus}
                 onChangeText={handleInputChange}
               />
 
               <View style={styles.footer}>
-                <Button title="Confirmar" onPress={handleSubmit} />
+                <Button title="Confirm" onPress={handleSubmit} />
               </View>
             </View>
           </View>
         </TouchableWithoutFeedback>
       </KeyboardAvoidingView>
     </SafeAreaView>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    width: '100%',
-    alignItems: 'center',
-    justifyContent: 'space-around',
+    width: "100%",
+    alignItems: "center",
+    justifyContent: "space-around",
   },
   content: {
     flex: 1,
-    width: '100%',
+    width: "100%",
   },
   form: {
     flex: 1,
-    width: '100%',
+    width: "100%",
     paddingHorizontal: 54,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
   header: {
-    alignItems: 'center',
+    alignItems: "center",
   },
   emoji: {
     fontSize: 44,
@@ -131,7 +126,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontFamily: fonts.heading,
     color: colors.heading,
-    textAlign: 'center',
+    textAlign: "center",
     marginTop: 20,
     lineHeight: 32,
   },
@@ -139,15 +134,15 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderColor: colors.gray,
     color: colors.heading,
-    width: '100%',
+    width: "100%",
     marginTop: 50,
     padding: 10,
     fontSize: 18,
-    textAlign: 'center',
+    textAlign: "center",
   },
   footer: {
-    width: '100%',
+    width: "100%",
     marginTop: 40,
     paddingVertical: 10,
   },
-})
+});

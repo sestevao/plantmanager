@@ -32,12 +32,12 @@ export function PlantSave() {
     }
 
     if (dateTime && isBefore(dateTime, new Date())) {
-      setSeletedDateTime(new Date())
+      setSelectedDateTime(new Date())
       return Alert.alert("Choose a time in the future! ⏰")
     }
 
     if (dateTime) {
-      setSeletedDateTime(dateTime)
+      setSelectedDateTime(dateTime)
       }
   }
 

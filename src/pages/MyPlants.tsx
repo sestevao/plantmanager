@@ -52,7 +52,7 @@ export function MyPlants() {
         { locale: pt }
       )
 
-      setNextWatered(`Water yout ${plantsStorage[0].name} from here to ${nextTime}.`)
+      setNextWatered(`Water your ${plantsStorage[0].name} from here to ${nextTime}.`)
       setMyPlants(plantsStorage)
       setLoading(false)
     }
