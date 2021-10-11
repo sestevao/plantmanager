@@ -120,6 +120,4 @@ For more details on how to run the app on an emulator or on your physical device
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-<hr />
-
 <sub align="center">made with 💜 by sestevao</sub>
