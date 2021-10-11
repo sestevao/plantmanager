@@ -74,8 +74,6 @@ $ expo start
 # Well done, PlantManager is started!
 ```
 
-**⚠️ Remember to use your machine's IP address**
-
 Replace the host with your local **IP address**. Do the same for the API file inside services.
 
 ```javascript
@@ -87,6 +85,8 @@ const api = axios.create({
 
 export default api;
 ```
+
+**⚠️ Remember to use your machine's IP address**
 
 After doing this, the metro bundler will open in your browser. Scan QrCode in Expo server interface. Some options for running the Application:
 
@@ -108,8 +108,8 @@ For more details on how to run the app on an emulator or on your physical device
 
 - Share care actions on social networks
 - Scoring for watering done on plants
-- Adding plants to the listing by the user
-- Adding a dark theme
+- Add plants to the listing by the user
+- Add a dark theme
 - Remove the question of environments
 - Took the icons of the plants and put real photos, I added tips on plant lighting
 - Fix some bugs in notifications, daily and weekly notifications work properly
