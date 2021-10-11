@@ -3,14 +3,14 @@
   <pre>🌱 Application to help people take care of their plants 🌱</pre>
 </div>
 
-## 💻 Project
+## 💻 About the Project
 
 Many people have plants at home and always forget to water them. Well your problems are over, the **🌱Plant Manager🌱** came to remind you to be lazy that only stays on the PC all day, water your little platter that is dying of thirst. The app will send a notification to your cell phone every time you need to water your plant according to the type it is.
 
 Application built on the React Native track from Next Level Week NLW#05 from @rocketseat during April 19-25, 2021.
 
 <div align="center">
-  <img src="https://github.com/sestevao/plantmanager/blob/main/.github/PlantManager.png">
+  <img src="https://github.com/sestevao/plantmanager/blob/main/.github/PlantManager.png" width=400 height=230 style="border-radius:5px; padding-right:20px;">
 </div>
 
 ## 🛠️ Features
@@ -49,7 +49,7 @@ Application built on the React Native track from Next Level Week NLW#05 from @ro
 
 You can view the project layout via [this link](https://www.figma.com/file/IhQRtrOZdu3TrvkPYREzOy/PlantManager). Remembering that you need to have a Figma account to access it.
 
-## 🚀 Getting started
+## ✅ Getting started
 
 Use **yarn** or **npm install** to install project dependencies. Then start the project and fake API with JSON Server.
 
