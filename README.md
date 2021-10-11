@@ -122,4 +122,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <hr />
 
-<small>made with 💜 by sestevao 👋</small>
+<sub align="center"><sup>made with 💜 by sestevao</sup></sub>
