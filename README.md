@@ -119,3 +119,7 @@ For more details on how to run the app on an emulator or on your physical device
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+<hr />
+
+Made with 💜 by sestevao 👋
