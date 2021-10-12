@@ -7,7 +7,7 @@
 
 Many people have plants at home and always forget to water them. Well your problems are over, the **🌱Plant Manager🌱** came to remind you to be lazy that only stays on the PC all day, water your little platter that is dying of thirst. The app will send a notification to your cell phone every time you need to water your plant according to the type it is.
 
-Application built on the React Native track from Next Level Week NLW#06 from @rocketseat during June 20-24, 2021.
+Application built on the React Native track from Next Level Week NLW#06 from @rocketseat during April 19-25, 2021.
 
 <div align="center">
   <img src="https://github.com/sestevao/plantmanager/blob/main/.github/PlantManager.png">
