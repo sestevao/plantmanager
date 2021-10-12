@@ -10,7 +10,7 @@ Many people have plants at home and always forget to water them. Well your probl
 Application built on the React Native track from Next Level Week NLW#05 from @rocketseat during April 19-25, 2021.
 
 <div align="center">
-  <img src="https://github.com/sestevao/plantmanager/blob/main/.github/PlantManager.png" width=400 height=230 style="border-radius:5px; padding-right:20px;">
+  <img src="https://github.com/sestevao/plantmanager/blob/main/.github/PlantManager.png">
 </div>
 
 ## 🛠️ Features
@@ -106,15 +106,15 @@ For more details on how to run the app on an emulator or on your physical device
 
 ## 🔥 Additional functionalities
 
-- Share care actions on social networks
-- Scoring for watering done on plants
-- Add plants to the listing by the user
-- Add a dark theme
-- Remove the question of environments
-- Took the icons of the plants and put real photos, I added tips on plant lighting
-- Fix some bugs in notifications, daily and weekly notifications work properly
-- Add the days of the week that they have to be watered on the cards of the plants
-- Correct the order in which they are displayed on screen
+- [ ] Share care actions on social networks
+- [ ] Scoring for watering done on plants
+- [ ] Add plants to the listing by the user
+- [ ] Add a dark theme
+- [ ] Remove the question of environments
+- [ ] Took the icons of the plants and put real photos, I added tips on plant lighting
+- [ ] Fix some bugs in notifications, daily and weekly notifications work properly
+- [ ] Add the days of the week that they have to be watered on the cards of the plants
+- [ ] Correct the order in which they are displayed on screen
 
 ## 📝 License
 
